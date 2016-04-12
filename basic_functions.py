@@ -18,7 +18,13 @@ def main():
 
 def get_limits():
     minimum = int(input("Enter the minimum: "))
-    maximum = int(input("Enter the maximum: "))
+    while True:
+        maximum = int(input("Enter the maximum: "))
+        if maxium < minimum:
+            print("Maximum too low!")
+        else:
+            break
+            
     return minimum, maximum
 
 
